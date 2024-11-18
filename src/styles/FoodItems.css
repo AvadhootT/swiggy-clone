@@ -1,0 +1,197 @@
+/* Global Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f0f0f0;
+}
+
+/* Food Items Container */
+.food-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2rem 6rem 6rem 6rem; /* Adjust top margin only */
+}
+
+/* Food Cards */
+.food-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%; /* Ensures cards fill available space */
+}
+
+.food-card {
+  width: 280px; /* Keeps the card width */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Ensures rounded corners on all sides */
+  margin: 0.5rem; /* Reduced spacing */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden; /* Ensures the image respects the card's border-radius */
+}
+
+.food-card:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+}
+
+.food-card img {
+  width: 100%;
+  height: 180px; /* Keeps image height consistent */
+  object-fit: cover; /* Ensures image fills the container */
+  border-radius: inherit; /* Matches the card's border radius */
+  transition: transform 0.3s ease-in-out;
+}
+
+.food-card:hover img {
+  transform: scale(1.1); /* Subtle zoom on the image */
+}
+
+.food-card h3 {
+  padding: 1rem;
+  font-size: 18px;
+  margin-bottom: 0;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.food-card:hover h3 {
+  color: #f95b00; /* Change text color on hover */
+}
+
+.meal-rating-container {
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+  gap: 0rem; /* Add space between elements */
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+.meal-rating {
+  display: flex;
+  align-items: center;
+  padding: 0.1rem;
+  font-size: 14px;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  color: rgb(22, 181, 86); /* Black text color */
+}
+
+.meal-rating-value {
+  font-size: 14px;
+  color: black; /* Match the color for consistency */
+  /* align-items: center; */
+  padding: 0.1rem;
+}
+
+.meal-time {
+  font-size: 14px;
+  color: black; /* Match the color for consistency */
+}
+/* Enhanced Modal Styles */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #ffffff, #f8f8f8);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.modal-content h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.modal-content img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.modal-content img:hover {
+  transform: scale(1.05);
+}
+
+.modal-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+  text-align: justify;
+  margin: 0.5rem 0;
+  padding: 0 1rem;
+}
+
+.modal-content p strong {
+  color: #444;
+  font-weight: bold;
+}
+
+.modal-content button {
+  background: linear-gradient(to right, #f95b00, #fc8700);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.modal-content button:hover {
+  background: linear-gradient(to right, #fc8700, #f95b00);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content button:active {
+  transform: scale(0.95);
+}
+
+/* Add subtle animation when the modal appears */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design for Modal */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .modal-content h2 {
+    font-size: 22px;
+  }
+
+  .modal-content p {
+    font-size: 14px;
+  }
+
+  .modal-content button {
+    padding: 0.6rem 1.5
+  }
+}

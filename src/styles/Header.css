@@ -1,0 +1,83 @@
+/* Reset and Global Styles */
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: Arial, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #282c3f;
+  font-weight: 300;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white; /* White background */
+  padding: 10px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for separation */
+}
+
+.svg-icon {
+  height: 50px;  /* Adjust logo size */
+  transition: transform 0.3s ease-in-out;
+}
+
+.svg-icon:hover {
+  transform: scale(1.1); /* Enlarge logo on hover */
+}
+
+.title {
+  color: #ff5200; /* Swiggy-like orange */
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+}
+
+.search-box {
+  padding: 10px;
+  width: 200px;
+  border-radius: 25px;
+  border: 2px solid #ff5200;  /* Border with Swiggy-like orange */
+  outline: none;
+  font-size: 14px;
+  transition: width 0.3s ease;
+}
+
+.search-box:focus {
+  width: 250px;
+  border-color: #ff5200;  /* Change border on focus */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-box {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

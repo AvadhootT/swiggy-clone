@@ -1,0 +1,51 @@
+/* Container for the filter options */
+.filter-options {
+  margin: 20px auto;
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container for the buttons */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between buttons */
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+/* Styling for individual buttons */
+.filter-button {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 20px; /* Creates the pill-like shape */
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  white-space: nowrap; /* Prevents text wrapping */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a slight shadow */
+}
+
+/* Hover effect */
+.filter-button:hover {
+  background-color: #f0f0f0; /* Slight background change on hover */
+  border-color: #bbb;
+}
+
+/* Focus effect */
+.filter-button:focus {
+  outline: none;
+  border-color: #007bff; /* Highlighted border for accessibility */
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.6);
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .filter-button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}

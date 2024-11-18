@@ -1,0 +1,111 @@
+/* Container for the filter dropdown */
+.filter-container1 {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown trigger button styling */
+.filter-container1 .filter-button1 {
+    padding: 8px 16px;
+    border: 1px solid #d3d3d3;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-container1 .filter-button1:hover {
+    background-color: #f5f5f5;
+    border-color: #cccccc;
+}
+
+.filter-container1 .filter-button1:active {
+    background-color: #e6e6e6;
+    color: #000000;
+}
+
+/* Dropdown menu container */
+.filter-container1 .dropdown {
+    position: absolute;
+    top: calc(100% + 10px); /* Spaced below the button */
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    z-index: 10;
+    overflow: hidden;
+    animation: fadeIn 0.3s ease;
+}
+
+/* List inside the dropdown */
+.filter-container1 .dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Items inside the dropdown list */
+.filter-container1 .dropdown-item {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-container1 .dropdown-item:hover {
+    background-color: #f5f5f5;
+}
+
+/* Styling radio buttons and labels inside dropdown */
+.filter-container1 .dropdown-item label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333333;
+}
+
+.filter-container1 .dropdown-item input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Apply button inside the dropdown */
+.filter-container1 .apply-button1 {
+    display: block;
+    background-color: #ff9800;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    width: calc(100% - 20px); /* Full width with padding */
+    margin: 10px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.filter-container1 .apply-button1:hover {
+    background-color: #e68a00;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
