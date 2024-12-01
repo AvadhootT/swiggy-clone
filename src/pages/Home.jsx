@@ -49,7 +49,7 @@ function Home() {
       <footer className="footer">
         <div>
           <img src={footerImage} alt="Footer Logo" className="footer-image" />
-          <p>&copy; 2024 Brainstorm Force Assessment. All rights reserved.</p>
+          <p>&copy; 2024 Avadhoot Tavhare. All rights reserved.</p>
         </div>
       </footer>
     </div>

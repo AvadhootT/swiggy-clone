@@ -8,7 +8,7 @@ function Header() {
       <img src={logo} alt="Logo" className="svg-icon" />
 
       {/* Website Title */}
-      <h1 className="title">Brainstorm Force Assessment</h1>
+      <h1 className="title">Swiggy</h1>
 
       {/* Search Box */}
       <div className="search-container">
